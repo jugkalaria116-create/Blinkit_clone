@@ -1,0 +1,154 @@
+/* =========================
+   GLOBAL DASHBOARD LAYOUT
+========================= */
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #e7e7e76e; /* main content */
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+:root {
+  --green-gradient: linear-gradient(180deg, #1f3d2b 0%, #142a20 100%);
+}
+
+.sidebar {
+  width: 240px;
+  background: var(--green-gradient); /* ✅ SAME */
+  color: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.logo span {
+  color: #00ff99;
+}
+
+/* =========================
+   MENU (TABLE BASED)
+========================= */
+
+.menu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+}
+
+/* ✅ DEFAULT BUTTON — SAME AS SIDEBAR */
+.menu-table tr,
+.menu-table td {
+  background: var(--green-gradient) !important;
+  border: none !important;
+}
+
+/* Button base */
+.menu-table tr {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+/* 🟢 HOVER — LIGHT OVERLAY */
+.menu-table tr:hover,
+.menu-table tr:hover td {
+  background:
+    var(--green-gradient),
+    rgba(255, 255, 255, 0.08) !important;
+  transform: translateX(4px);
+}
+
+/* 🟢 ACTIVE — STRONGER OVERLAY */
+.menu-table tr.active,
+.menu-table tr.active td {
+  background:
+    var(--green-gradient),
+    rgba(0, 255, 153, 0.25) !important;
+  font-weight: 600;
+}
+
+/* Cell */
+.menu-table td {
+  padding: 14px 16px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/* Icon */
+.menu-table .icon {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #eafff5;
+}
+
+/* Text */
+.menu-table .text {
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  background: #ffffff;
+  padding: 18px 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .menu-table {
+    display: flex;
+  }
+
+  .menu-table tbody {
+    display: flex;
+    gap: 10px;
+  }
+
+  .menu-table tr {
+    min-width: 150px;
+    transform: none;
+  }
+}
