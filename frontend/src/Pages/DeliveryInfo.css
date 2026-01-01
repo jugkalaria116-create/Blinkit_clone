@@ -1,0 +1,84 @@
+.policy-page {
+  background: #f4f8f4;
+  font-family: "Nunito", sans-serif; /* ✅ Nunito */
+  padding-bottom: 60px;
+}
+
+/* Header */
+.policy-header {
+  background: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.policy-header p {
+  color: #777;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+.policy-header h1 {
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  color: #1f3d2b;
+}
+
+/* Content */
+.policy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.policy-container section {
+  margin-bottom: 25px;
+}
+
+.policy-container h2 {
+  color: #2e7d32;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.policy-container p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .policy-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .policy-header h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .policy-header h1 {
+    font-size: 26px;
+  }
+
+  .policy-container {
+    margin: 16px;
+    padding: 18px;
+  }
+
+  .policy-container h2 {
+    font-size: 18px;
+  }
+
+  .policy-container p {
+    font-size: 14px;
+  }
+}
