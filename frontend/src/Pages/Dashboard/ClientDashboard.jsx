@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import Stats from "./Stats";
 import RecentActivity from "./RecentActivity";
-
 import Profile from "./Profile";
 import MyData from "./MyData";
 import Settings from "./Settings";
@@ -19,9 +18,7 @@ function ClientDashboard() {
       <div className="main">
         <Topbar />
 
-        {/* 🔥 Dashboard Content Changes Here */}
         <Routes>
-          {/* Dashboard Home */}
           <Route
             path="/"
             element={
@@ -31,8 +28,6 @@ function ClientDashboard() {
               </>
             }
           />
-
-          {/* Sidebar Pages */}
           <Route path="profile" element={<Profile />} />
           <Route path="data" element={<MyData />} />
           <Route path="settings" element={<Settings />} />

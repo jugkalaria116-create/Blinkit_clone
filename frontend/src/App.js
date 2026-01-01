@@ -32,11 +32,10 @@ import AdminDashboard from "./Pages/AdminDashboard/AdminDashboard";
 function App() {
   return (
     <BrowserRouter>
-      {/* Navbar (shown on public pages) */}
       <Navbar />
 
       <Routes>
-        {/* ========= HOME ========= */}
+        {/* HOME */}
         <Route
           path="/"
           element={
@@ -47,7 +46,7 @@ function App() {
           }
         />
 
-        {/* ========= SHOP ========= */}
+        {/* SHOP */}
         <Route
           path="/shop"
           element={
@@ -58,20 +57,20 @@ function App() {
           }
         />
 
-        {/* ========= AUTH ========= */}
+        {/* AUTH */}
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
 
-        {/* ========= MAIN PAGES ========= */}
+        {/* MAIN */}
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
 
-        {/* ========= ICON PAGES ========= */}
+        {/* ICON */}
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/search" element={<Search />} />
 
-        {/* ========= POLICY PAGES ========= */}
+        {/* POLICY */}
         <Route path="/shipping-policy" element={<ShippingPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -81,14 +80,11 @@ function App() {
           element={<TermsAndConditions />}
         />
 
-        {/* ========= CLIENT DASHBOARD ========= */}
+        {/* DASHBOARDS */}
         <Route path="/dashboard/*" element={<ClientDashboard />} />
-
-        {/* ========= ADMIN DASHBOARD ========= */}
         <Route path="/admin/*" element={<AdminDashboard />} />
       </Routes>
 
-      {/* Footer (shown on public pages) */}
       <Footer />
     </BrowserRouter>
   );
