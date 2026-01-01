@@ -1,0 +1,150 @@
+/* Overlay */
+.search-overlay {
+  position: fixed;
+  /* inset: 0; */
+  background: rgba(255, 255, 255, 0.98);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif; /* ✅ Nunito */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1f3d2b;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Content */
+.search-content {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 20px;
+}
+
+/* Heading */
+.search-content h1 {
+  font-size: 42px;
+  color: #1f3d2b;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Search input */
+.search-content input {
+  width: 100%;
+  max-width: 700px;
+  font-size: 22px;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #1f3d2b;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-content input::placeholder {
+  color: #aaa;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Empty state */
+.search-empty {
+  margin-top: 70px;
+  opacity: 0.35;
+}
+
+.heart-icon {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/* Empty text */
+.search-empty p {
+  font-size: 22px;
+  margin-bottom: 6px;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-empty span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Button */
+.search-empty button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-empty button:hover {
+  background: #1f3d2b;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-content h1 {
+    font-size: 30px;
+  }
+
+  .search-content input {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .close-btn {
+    top: 18px;
+    right: 18px;
+    font-size: 24px;
+  }
+
+  .search-content {
+    padding: 30px 16px;
+  }
+
+  .search-content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .search-content input {
+    font-size: 18px;
+  }
+
+  .search-empty {
+    margin-top: 40px;
+  }
+
+  .search-empty p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-content h1 {
+    font-size: 24px;
+  }
+
+  .search-content input {
+    font-size: 16px;
+  }
+}
