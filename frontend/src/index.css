@@ -11,3 +11,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* =========================
+   GLOBAL RESPONSIVE SETUP
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Large screens / 4K */
+@media (min-width: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+/* Laptops */
+@media (max-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15.5px;
+  }
+}
+
+/* Tablets & Large Phones */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== COMMON ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+}

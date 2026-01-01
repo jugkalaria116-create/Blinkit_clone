@@ -1,0 +1,206 @@
+/* =====================================
+   BASE / DESKTOP (≥ 992px)
+   ===================================== */
+
+.hero-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* LEFT */
+.hero-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+}
+
+.categories span {
+  margin-right: 18px;
+  color: #00a859;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* LOGO */
+.hero-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f3d2b;
+  cursor: pointer;
+  white-space: nowrap; /* prevents Tasty / Daily break */
+}
+
+.hero-logo span {
+  margin: 0 6px;
+}
+
+/* RIGHT */
+.hero-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 600;
+}
+
+.hero-right span {
+  color: #00a859;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  gap: 14px;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.icons span {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.icons span:hover {
+  transform: scale(1.15);
+}
+
+/* =====================================
+   LAPTOP / LARGE TABLET (≤ 992px)
+   ===================================== */
+
+@media (max-width: 992px) {
+  .hero-bar {
+    padding: 16px 24px;
+  }
+
+  .hero-left {
+    gap: 18px;
+  }
+
+  .categories span {
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .hero-logo {
+    font-size: 28px;
+  }
+
+  .hero-right {
+    gap: 14px;
+  }
+
+  .icons {
+    font-size: 17px;
+    gap: 12px;
+  }
+}
+
+/* =====================================
+   ⚠️ PROBLEM ZONE FIX
+   TABLET / SMALL LAPTOP (865px–769px)
+   ===================================== */
+
+@media (max-width: 865px) {
+  .hero-bar {
+    padding: 16px 20px;
+  }
+
+  .hero-left {
+    gap: 14px;
+  }
+
+  .categories span {
+    margin-right: 8px;
+    font-size: 13.5px;
+  }
+
+  .hero-logo {
+    font-size: 26px;
+  }
+
+  .hero-right {
+    gap: 12px;
+  }
+
+  .icons {
+    font-size: 16px;
+    gap: 10px;
+    margin-left: 10px;
+  }
+}
+
+/* =====================================
+   MOBILE / SMALL TABLET (≤ 768px)
+   ===================================== */
+
+@media (max-width: 768px) {
+  .hero-bar {
+    flex-direction: column; /* stack layout */
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* LEFT */
+  .hero-left {
+    justify-content: center;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .categories span {
+    margin-right: 0;
+  }
+
+  /* LOGO */
+  .hero-logo {
+    font-size: 26px;
+  }
+
+  /* RIGHT */
+  .hero-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .icons {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+/* =====================================
+   SMALL PHONES (≤ 480px)
+   ===================================== */
+
+@media (max-width: 480px) {
+  .hero-logo {
+    font-size: 24px;
+  }
+
+  .categories span,
+  .hero-right span {
+    font-size: 13px;
+  }
+
+  .icons {
+    font-size: 15px;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+.hero {
+  width: 100%;
+  height: 500px;
+  background: #6f8b4a; /* SAME GREEN AS IMAGE */
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Nunito", sans-serif; /* ✅ Nunito */
+}
+
+/* Text content */
+.hero-overlay {
+  margin-left: 80px;
+  color: #eef5e6;
+  max-width: 520px;
+  font-family: "Nunito", sans-serif;
+}
+
+.hero-overlay h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 28px;
+  opacity: 0.9;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Explore button */
+.explore-btn {
+  background: #1f3d2b;
+  color: #ffffff;
+  border: none;
+  padding: 14px 34px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+.explore-btn:hover {
+  background: #162c1f;
+  transform: translateY(-2px);
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    height: 420px;
+  }
+
+  .hero-overlay {
+    margin-left: 50px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 44px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero-overlay {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-overlay h1 {
+    font-size: 32px;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .hero-overlay h1 {
+    font-size: 26px;
+  }
+
+  .explore-btn {
+    padding: 12px 26px;
+    font-size: 14px;
+  }
+}
