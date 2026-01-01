@@ -1,0 +1,156 @@
+.login-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(206, 248, 206, 0.08),
+      rgba(206, 255, 206, 0.08)
+    ),
+    url("https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif; /* ✅ Nunito */
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  width: 400px;
+  padding: 38px 34px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Heading */
+.login-card h2 {
+  margin-bottom: 6px;
+  color: #2e7d32;
+  font-size: 26px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  font-size: 14px;
+  background: #f6faf6;
+  font-family: "Nunito", sans-serif;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15);
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.2s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+.login-card button:hover {
+  background: #256628;
+}
+
+/* Register text */
+.register-text {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #555;
+  font-family: "Nunito", sans-serif;
+}
+
+.register-text span {
+  color: #2e7d32;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 26px;
+  }
+}
+@media (max-height: 600px) {
+  .login-page {
+    padding: 20px;
+    align-items: flex-start;
+  }
+}
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-card {
+  width: 380px;
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form-card .subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #22c55e;
+  outline: none;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+}
